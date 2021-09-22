@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Fragments.GameFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/board"
+            android:layout_width="400dp"
+            android:layout_height="550dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/board"
+            android:orientation="horizontal"
+            android:scaleType="fitXY">
+
+            <LinearLayout
+                android:id="@+id/board_game"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="105dp"
+                    android:layout_height="346dp"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginTop="84dp"
+                    android:gravity="center"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="105dp"
+                    android:layout_height="346dp"
+                    android:layout_marginStart="22dp"
+                    android:gravity="center"
+                    android:layout_marginTop="84dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="105dp"
+                    android:layout_height="346dp"
+                    android:layout_marginStart="25dp"
+                    android:gravity="center"
+                    android:layout_marginTop="84dp"
+                    android:orientation="vertical" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="337dp"
+            android:layout_height="110dp"
+            android:layout_alignTop="@id/board"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-35dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="132dp"
+            android:layout_height="134dp"
+            android:layout_alignBottom="@id/board"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-74dp"
+            android:src="@drawable/play" />
+
+    </RelativeLayout>
+
+</FrameLayout>

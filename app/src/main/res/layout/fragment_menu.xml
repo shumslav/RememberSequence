@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Fragments.MenuFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:src="@drawable/logo_menu"
+            android:scaleType="fitXY"
+            android:layout_marginTop="72dp"/>
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:src="@drawable/play_menu"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:layout_marginTop="440dp"/>
+
+        <ImageView
+            android:id="@+id/info"
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:src="@drawable/info"
+            android:layout_marginTop="11dp"
+            android:layout_marginStart="17dp"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

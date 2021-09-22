@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Fragments.LevelsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="235dp"
+            android:layout_height="91dp"
+            android:src="@drawable/logo_levels"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="69dp"
+            android:src="@drawable/leval"
+            android:layout_alignBottom="@id/logo"
+            android:layout_marginBottom="-24dp"
+            android:layout_alignEnd="@id/logo"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/level_test"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/level_btn_background"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:text="100"
+            android:shadowColor="#6C6203"
+            android:shadowDx="2"
+            android:shadowDy="10"
+            android:shadowRadius="1"
+            android:textSize="45sp"
+            android:textColor="#F3D306"
+            android:fontFamily="@font/font_14832"/>
+        
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="42dp"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:id="@+id/levels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</FrameLayout>
